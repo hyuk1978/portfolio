@@ -1,15 +1,12 @@
 @charset "utf-8";
-
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 #wrap {
     width: 100%;
     margin: 0 auto;
     /* padding-top: 60px; */
 }
-
 /* Header */
 #header {
     /* width 1280px */
@@ -47,7 +44,6 @@ body {
     cursor: pointer;
     opacity: 0.7;
 }
-
 /* Contents */
 .about {
     width: 100%;
@@ -76,7 +72,6 @@ body {
     font-size: 2.2rem;
     font-weight: bold;
 }
-
 .down_icon {
     text-align: center;
     color: #d9d9d9;
@@ -92,7 +87,6 @@ body {
     font-size: 2.5rem;
     cursor: pointer;
 }
-
 @keyframes scroll {
     0% {
         padding-bottom: 10px;
@@ -104,13 +98,12 @@ body {
         padding-bottom: 10px;
     }
 }
-
 /* about_me*/
 .sec_head {
     width: 66.66666666666667vw;
     margin: 0 auto;
     padding: 60px 0;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 1px solid #e0e0e0;
 }
 .title {
     text-align: center;
@@ -137,7 +130,6 @@ body {
 .about_me .card ul li i {
     margin-right: 20px;
     font-size: 1.5rem;
-
 }
 .about_me .card ul li p {
     font-size: 1.25rem;
@@ -147,12 +139,6 @@ body {
     font-weight: 900;
 }
 /* SKILL */
-
-/* .skill {
-    width: 66.66666666666667vw;
-    margin: 0 auto;
-    padding: 80px 0;
-} */
 .skill h3 {
     font-size: 1.5rem;
 }
@@ -171,4 +157,63 @@ body {
     width: 1.25rem;
     height: auto;
     margin-right: 0.3125rem;
+}
+/* portfolio */
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.project_card {
+    width: 50vw;
+    margin-right: 24px;
+    padding: 12px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+.project_card .project_title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.project_card a img {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #e6e6e6;
+}
+.project_card a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.project_card a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.project_card a:hover::before {
+    content: "Click";
+    background: block;
+    background: rgba(51, 51, 51, 0.6);
+}
+.project_card h3 {
+    font-weight: 700;
+}
+.project_card p{
+    color: #666;
+    margin-bottom: 12px;
+}
+.project span {
+    font-weight: 700;
 }
