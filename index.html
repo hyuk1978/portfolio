@@ -20,17 +20,17 @@
 <body>
     <div id="wrap">
         <!-- Header -->
-        <header id="header">
+        <header id="header" class="header_bgc_black">
             <div class="head">
-                <h1 class="logo"><a href="#">Y.H Portfolio</a></h1>
+                <h1 class="logo"><a href="index.html">Y.H Portfolio</a></h1>
                 <div class="gnb">
                     <nav>
                         <ul>
                             <li>
-                                <a href="#about">ABOUT ME</a>
-                                <a href="#">SKILL</a>
-                                <a href="#">PROJECT</a>
-                                <a href="#">CONTACT</a>
+                                <a href="#about_me">ABOUT ME</a>
+                                <a href="#skill">SKILL</a>
+                                <a href="#project">PROJECT</a>
+                                <a href="#contact">CONTACT</a>
                             </li>
                         </ul>
                     </nav>
@@ -40,7 +40,7 @@
         <!-- /Header -->
         <!-- Contents -->
         <main role="main">
-            <section class="about">
+            <section class="about" id="about">
                 <h2>
                     WELCOME <br>
                     YU HYUK <br>
@@ -54,7 +54,7 @@
                 </div>
             </section>
             <!-- about_me -->
-            <section class="about_me sec_head">
+            <section class="about_me sec_head" id="about_me">
                 <h2 class="title">
                     ABOUT ME
                 </h2>
@@ -95,7 +95,7 @@
                 </article>
             </section>
             <!-- skill -->
-            <section class="skill sec_head">
+            <section class="skill sec_head" id="skill">
                 <h2 class="title">SKILL</h2>
                 <h3>Front-End</h3>
                 <article class="skill_container">
@@ -137,8 +137,87 @@
                 </article>
             </section>
             <!-- portfolio -->
-            <section class="portfolio sec_head">
+            <section class="portfolio sec_head" id="project">
                 <h3 class="my_works title">MY WORK</h3>
+                <article class="project">
+                    <div class="project_card">
+                        <h2 class="project_title">
+                            React-Native Toy Project 
+                        </h2>
+                        <div class="card_img">
+                            <a href="https://github.com/hyuk1978/React-Native-Redux-CRUD" target="_blank">
+                                <img src="./images/mywork/todolist.png" alt="todoList">
+                            </a>
+                        </div>
+                        <h3>
+                            기술 스택
+                        </h3>
+                        <p>React-Native , Redux</p>
+                        <p>
+                            React-Native , Redux 라이브러리를 사용한 토이 프로젝트 입니다.
+                            구매하기 위한 쇼핑 품목을 입력하고 , 구매 체크 및 삭제로 이루어진 CRUD 입니다.
+                            React-Native , Redux를 처음 접하면서 생소한 태그와 라이브러리를 사용하며 어려움도 있었지만
+                            새롭운 만큼 재밌게 느껴졌습니다.
+                        </p>
+                    </div>
+                    <div class="project_card no_mr">
+                        <h2 class="project_title">
+                            신한투자증권 리뉴얼
+                        </h2>
+                        <div class="card_img">
+                            <a href="https://hyuk1978.github.io/shinhansec/" target="_blank">
+                                <img src="./images/mywork/shinhansec.png" alt="신항투자증권">
+                            </a>
+                        </div>
+                        <h3>
+                            기술 스택
+                        </h3>
+                        <p>HTML, CSS, JavaScript, jQuery</p>
+                        <p>
+                            팀프로젝트 작업으로 신한투자증권 페이지를 리류얼 하여 제작하였습니다.
+                            담당한 페이지는 메뉴-펀드-월간 추천펀드를 통해 페이지를 확인할 수 있으며, 상세페이지 '월간 추천펀드' 페이지로 <span>"햄버거 메뉴 - 펀드 - 월간 추천 펀드"</span> 페이지 제작,
+                            처음 해보는 협동 프로젝트인 만큼 웹 페이지가 어떻게 기획 , 개발 되는지 
+                            또는, 팀원간의 소통이 중요하다는 것을 느끼게된 경험이었습니다.
+                        </p>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project_card">
+                        <h2 class="project_title">
+                            Fall Guys 메인 페이지
+                        </h2>
+                        <div class="card_img">
+                            <a href="https://hyuk1978.github.io/fallguys" target="_blank">
+                                <img src="./images/mywork/fallguys.png" alt="fallguys">
+                            </a>
+                        </div>
+                        <h3>
+                            기술 스택
+                        </h3>
+                        <p>HTML, CSS, JavaScript, jQuery</p>
+                        <p>
+                            박스의 위치를 변경해주는 Position과 float을 이해할 수 있는 작업이었으며
+                            다양한 이벤트와 Animation를 사용하여 즐겁게 작업했습니다.
+                        </p>
+                    </div>
+                    <div class="project_card no_mr">
+                        <h2 class="project_title">
+                            인생네컷 모바일 페이지 클론코딩
+                        </h2>
+                        <div class="card_img">
+                            <a href="https://iyh1978.cafe24.com/portfolio/lifefourcuts/mockup.html" target="_blank">
+                                <img src="./images/mywork/lifefourcuts.png" alt="인생네컷">
+                            </a>
+                        </div>
+                        <h3>
+                            기술 스택
+                        </h3>
+                        <p>HTML, CSS, JavaScript, jQuery</p>
+                        <p>
+                            인생네컷 모바일 사이즈의 페이지를 구현해보았습니다.
+                        </p>
+                    </div>
+                </article>
                 <article class="project">
                     <div class="project_card">
                         <h2 class="project_title">
@@ -175,85 +254,7 @@
                         </p>
                     </div>
                 </article>
-                <article class="project">
-                    <div class="project_card">
-                        <h2 class="project_title">
-                            Fall Guys 메인 페이지
-                        </h2>
-                        <div class="card_img">
-                            <a href="https://hyuk1978.github.io/fallguys" target="_blank">
-                                <img src="./images/mywork/fallguys.png" alt="fallguys">
-                            </a>
-                        </div>
-                        <h3>
-                            기술 스택
-                        </h3>
-                        <p>HTML, CSS, JavaScript, jQuery</p>
-                        <p>
-                            박스의 위치를 변경해주는 Position과 float을 이해할 수 있는 작업이었으며
-                            다양한 이벤트와 Animation를 사용하여 즐겁게 작업했습니다.
-                        </p>
-                    </div>
-                    <div class="project_card no_mr">
-                        <h2 class="project_title">
-                            신한투자증권 리뉴얼
-                        </h2>
-                        <div class="card_img">
-                            <a href="https://hyuk1978.github.io/shinhansec/" target="_blank">
-                                <img src="./images/mywork/shinhansec.png" alt="신항투자증권">
-                            </a>
-                        </div>
-                        <h3>
-                            기술 스택
-                        </h3>
-                        <p>HTML, CSS, JavaScript, jQuery</p>
-                        <p>
-                            팀프로젝트 작업으로 신한투자증권 페이지를 리류얼 하여 제작하였습니다.
-                            담당한 페이지는 메뉴-펀드-월간 추천펀드를 통해 페이지를 확인할 수 있으며, 상세페이지 '월간 추천펀드' 페이지로 <span>"햄버거 메뉴 - 펀드 - 월간 추천 펀드"</span> 페이지 제작,
-                            처음 해보는 협동 프로젝트인 만큼 웹 페이지가 어떻게 기획 , 개발 되는지 
-                            또는, 팀원간의 소통이 중요하다는 것을 느끼게된 경험이었습니다.
-                        </p>
-                    </div>
-                </article>
-                <article class="project">
-                    <div class="project_card">
-                        <h2 class="project_title">
-                            인생네컷 모바일 페이지 클론코딩
-                        </h2>
-                        <div class="card_img">
-                            <a href="https://iyh1978.cafe24.com/portfolio/lifefourcuts/mockup.html" target="_blank">
-                                <img src="./images/mywork/lifefourcuts.png" alt="인생네컷">
-                            </a>
-                        </div>
-                        <h3>
-                            기술 스택
-                        </h3>
-                        <p>HTML, CSS, JavaScript, jQuery</p>
-                        <p>
-                            인생네컷 모바일 사이즈의 페이지를 구현해보았습니다.
-                        </p>
-                    </div>
-                    <div class="project_card no_mr">
-                        <h2 class="project_title">
-                            React-Native Toy Project 
-                        </h2>
-                        <div class="card_img">
-                            <a href="https://github.com/hyuk1978/React-Native-Redux-CRUD" target="_blank">
-                                <img src="./images/mywork/todolist.gif" alt="todolist">
-                            </a>
-                        </div>
-                        <h3>
-                            기술 스택
-                        </h3>
-                        <p>React-Native , Redux</p>
-                        <p>
-                            React-Native , Redux 라이브러리를 사용한 토이 프로젝트 입니다.
-                            구매하기 위한 쇼핑 품목을 입력하고 , 구매 체크 및 삭제로 이루어진 CRUD 입니다.
-                            React-Native , Redux를 처음 접하면서 생소한 태그와 라이브러리를 사용하며 어려움도 있었지만
-                            새롭운 만큼 재밌게 느껴졌습니다.
-                        </p>
-                    </div>
-                </article>
+                
             </section>
         </main>
         <!-- /Contents -->
@@ -267,6 +268,7 @@
         </aside>
         <!-- /Aisde -->
     </div>
+    <script src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/11916dfcb3.js" crossorigin="anonymous"></script>
 </body>
 </html>

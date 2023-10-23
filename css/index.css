@@ -13,13 +13,12 @@ body {
     width: 100%;
     height: 60px;
     line-height: 60px;
-    /* color: #000; */
-    color: #fff;
-    /* background: #fff; */
+    /* color: #fff; */
     background: none;
     position: fixed;
     top: 0;
     left: 50%;
+    z-index: 999999;
     transform: translateX(-50%);
 }
 #header .head {
@@ -216,4 +215,19 @@ body {
 }
 .project span {
     font-weight: 700;
+}
+
+
+/* 스크롤 이동시 배경 이미지 수정 */
+.header_bgc_black {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s;
+}
+.header_bgc_white {
+    background-color: #fff ;
+    background-color: rgba(255, 255, 255, 0.9)  !important;
+    border-bottom: 1px solid #ccc;
+    color: #000 ;
+    transition: all 0.5s;
 }
